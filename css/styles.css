@@ -1,0 +1,328 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+
+}
+/* title */
+body,.container-fluid,.navbar,.btn-action{
+    background:linear-gradient(300deg,#4cf0b9 ,#0f0103,#efe360);
+    background-size: 180% 180%;
+    animation: gradient-animation 12s ease infinite;
+}
+@keyframes gradient-animation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+    
+}
+
+.container-fluid {
+    padding: 3% 25%;
+}
+
+.navbar {
+    /* background-color: rgb(26, 27, 26); */
+    color: rgb(254, 254, 252);
+    /* padding-bottom: 0.5rem; */
+
+}
+
+/* .navbar-brand{
+    font-family: 'Montserrat-bold';
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-style: normal;
+} */
+.title {
+    font-family: 'Montserrat-Bold';
+    font-size: 3rem;
+    size: 10px;
+    font-style: normal;
+    background-image: url("images/zoro.png");
+}
+
+.form-inline {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    font-size: 18px;
+}
+
+.nav-item {
+    padding: 0  ;
+}
+
+h1 {
+    color: rgb(231, 235, 239);
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.8;
+    font-size: 10rem;
+
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f8f8f9;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.title-img {
+    margin-top: 45px; 
+    padding-bottom: 0;
+    width: 80%;
+    /* for rotate the img */
+    transform: rotate(0deg);
+}
+
+/* .img-rot,
+.img-rot2 {
+    animation: dog 14s linear infinite;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 0;
+    width: 75px;
+    height: 85px;
+    margin: 35px;
+}
+
+@keyframes dog {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+} */
+
+#features {
+    padding: 3% 15%;
+    /* background-color: rgb(177, 240, 240); */
+    font-family: "montserrat-bold";
+    font-size: 1.5rem;
+    display: inline-flexbox;
+    text-align: center;
+    /* animation:linear infinite;
+    animation-name: slidein;
+    animation-duration: 15s; */
+
+}
+
+/* @keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+} */
+.action-button {
+    display: block;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+    background-color:rgb(10, 10, 10); 
+    font-family: "montserrat-bold";
+    font-size: 3rem;
+    border-radius: 0;
+    padding: 15px 20px;
+    text-size-adjust: 4rem;
+
+}
+.btn-action{
+    font-family: "montserrat-bold";
+    border-radius: 4%;
+    /* background-color: black;
+    color: #f5f0f0; */
+        color: rgb(247, 241, 241);
+        position: absolute;
+        top: 84%;
+        left: 40%;
+        font-size: 30px;
+        border: 1px rgb(17, 3, 110) solid;
+        padding: 20px 35px;
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        transition: 1s;
+    }
+.btn-action:before{
+        content: " ";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 50%;
+        background-color: white;
+    }
+    .btn-action span:nth-child(1){
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background:linear-gradient(to right,#0c002b,#3ff180);
+        animation: line1 3s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes line1 {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+        
+    }
+    .btn-action span:nth-child(2){
+        position: absolute;
+        top:0px;
+        right: 0px;
+        width: 2px;
+        height: 100%;
+        background:linear-gradient(to bottom,#0c002b,#3ff180);
+        animation: line2 3s linear infinite;
+    }
+    @keyframes line2 {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+        
+    }
+    .btn-action span:nth-child(3){
+        position: absolute;
+        bottom:0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background:linear-gradient(to left,#0c002b,#3ff180);
+        animation: line3 3s linear infinite;
+    }
+    @keyframes line3{
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+        
+    }
+    .btn-action span:nth-child(4){
+        position: absolute;
+        bottom:0px;
+        left: 0px;
+        width: 2px;
+        height: 100%;
+        background:linear-gradient(to top,#0c002b,#1779ff);
+        animation: line4 3s linear  infinite;
+        animation-delay: 1s;
+    }
+    @keyframes line4 {
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+        
+    }
+    .btn-action:hover{
+        background-color: rgb(230, 164, 65);
+         box-shadow: 0px 25px 50px rgb(230, 164, 65);
+         color: rgb(241, 236, 236);
+    }
+    .btn-action:hover span{
+        background: rgb(244, 161, 36);
+    
+    }
+
+.aorrow {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #ed3838;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+}
+
+.bull,
+.check,
+.heart {
+    font-size: 3.5rem;
+    size: 10px;
+    display: inline-flexbox;
+    color: #ef8172;
+}
+
+h3 {
+    text-align: center;
+    font-family: "montserrat-bold";
+    font-size: 1.5rem;
+    color: rgb(227, 225, 225);
+
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+
+}
+
+p {
+    color: #d7d2d2;
+}
+
+#testimonials {
+    text-align: center;
+    padding: 2% 7%  ;
+    background-color: #ef8172;
+    color: rgb(22, 22, 22);
+}
+.testimonial-img {
+   text-align: center;
+     margin: 10px;
+     margin-bottom: 0;
+    border-radius: 100%;
+    height: 15rem;
+    width: 20rem;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-top: 0px;
+    padding-bottom: 2px;
+
+}
+
+.press-logo {
+    margin: 20px 20px 30px;
+  width: 14%;
+    
+}
+.carsousel-item{
+    margin: 3% 15%;
+    height:50px;
+    
+}
+#pricing{
+    text-align: center;
+    font-family:"montserrat-bold" ;
+    margin: 60px;
+    color:black;
+}
